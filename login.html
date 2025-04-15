@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./reset.css" rel="stylesheet" />
     <link href="./common.css" rel="stylesheet" />
     <link href="./login.css" rel="stylesheet" />
     <title>Login</title>
@@ -10,7 +11,7 @@
   <body>
     <header>
       <div class="logo">
-        <a href="/index.html"
+        <a href="/index.html" aria-label="홈으로 이동"
           ><img src="./logo.png" alt="" class="image-logo"
         /></a>
       </div>
@@ -18,13 +19,20 @@
     <section class="form-section">
       <form action="post" method="post" class="form-signup">
         <label for="email" class="label">이메일</label>
-        <input type="email" class="input email" name="email" />
+        <input
+          type="email"
+          class="input email"
+          name="email"
+          autocomplete="email"
+        />
         <label for="password" class="label">비밀번호</label>
         <input
           id="password-field"
           type="password"
           class="input password"
           name="password"
+          aria-label="비밀번호 표시"
+          aria-pressed="false"
         />
         <div class="icon-eye btn--click">
           <svg
