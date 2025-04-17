@@ -139,35 +139,63 @@ footer .section2 {
   margin-left: 10px;
 }
 
-@media(max-width : 1199px){
+/* 테블릿 사이즈 적용시 반응형 CSS 스타일 적용 */
+@media(max-width : 1199px) {
   .navbar {
     padding: 0 24px;
   }
 
-  .hero-section{
-    height : 560px;
+  .hero-section {
+    height: 560px;
   }
 
-  .hero-container{
-    height : 600px;
+  .hero-container {
+    height: 600px;
     flex-direction: column;
   }
 
-  .hero-button{
+  .hero-button {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .hero-button .btn{
-    width : 200px
+  .hero-button .btn {
+    width: 200px
   }
 
-  .hero-text-block .text{
+  main .hero-container .hero-text-block .text {
     display: flex;
     flex-direction: row;
-    gap : 5px
+    gap: 5px
   }
+
+  .section2 {
+    padding: 0 16px;
+    margin-bottom: 50px
+  }
+
+  .section2-div .part1,
+  .section2-div .part2,
+  .section2-div .part3 {
+    flex-direction: column;
+  }
+
+  .section2-div .part1,
+  .section2-div .part3 {
+    align-items: self-start;
+    /* justify-content: center; */
+  }
+
+  .section2-div .part2 {
+    align-items: self-end;
+  }
+
+  .subImage {
+    height: auto;
+    width: 100%;
+  }
+
 
 
 }
