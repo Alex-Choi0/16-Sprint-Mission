@@ -138,3 +138,36 @@ footer .section2 {
   width: auto;
   margin-left: 10px;
 }
+
+@media(max-width : 1199px){
+  .navbar {
+    padding: 0 24px;
+  }
+
+  .hero-section{
+    height : 560px;
+  }
+
+  .hero-container{
+    height : 600px;
+    flex-direction: column;
+  }
+
+  .hero-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-button .btn{
+    width : 200px
+  }
+
+  .hero-text-block .text{
+    display: flex;
+    flex-direction: row;
+    gap : 5px
+  }
+
+
+}
